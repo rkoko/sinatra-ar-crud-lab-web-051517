@@ -1,0 +1,8 @@
+<!--form to update blog post-->
+<form method="post" action="/posts/<%=@post.id%>" >
+
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <p>Title: <input type="text" value="<%= @post.name %>" name="name" id="name"></p>
+  <p>Content: <input type = "text" value="<%= @post.content %>" name = "content" id="content"></p>
+   <button type = "submit" value = "submit"> submit </button>
+</form>
